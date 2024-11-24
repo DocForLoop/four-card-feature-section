@@ -1,0 +1,13 @@
+.feature__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature__card-icon {
+    align-self: flex-end;
+}
+
+.feature__grid {
+    display: grid;
+    gap: 1.5rem;
+}

@@ -27,6 +27,7 @@
   --fs-1: clamp(1.5rem, 1.2359154929577465rem + 1.1267605633802815vw, 2.25rem);
   --fs-2: 0.938rem;
   --fs-3: 0.813rem;
+  --fs-4: 1.25rem;
 }
 
 :root {
@@ -36,7 +37,7 @@
   --clr-primary-4: hsl(212, 86%, 64%);
   --clr-primary-5: hsl(232, 12%, 34%);
   --clr-secondary-bg: hsl(0, 0%, 98%);
-  --clr-secondary-box-shadow: hsl(229, 6%, 66%);
+  --clr-secondary-text: hsl(229, 6%, 66%);
 }
 
 html {
@@ -54,15 +55,23 @@ html {
 
 body {
   line-height: 1.5;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-2);
+  color: var(--clr-primary-5);
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 h1, h2, h3 {
   line-height: 1;
+  font-weight: 600;
+  font-size: var(--fs-4);
 }
 
 p, li, figcaption {
   text-wrap: pretty;
   max-width: 65ch;
+  color: var(--clr-secondary-text);
 }
 
 img, picture, video, canvas, svg {
@@ -84,4 +93,82 @@ h1, h2, h3, h4, h5, h6 {
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+.feature__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__card-icon {
+  align-self: flex-end;
+}
+
+.feature__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.feature {
+  background-color: var(--clr-secondary-bg);
+  padding-inline: 32px;
+  padding-top: 85px;
+  padding-bottom: 78px;
+}
+
+.feature__header h2 {
+  padding-inline: 7px;
+}
+
+.feature__title {
+  font-weight: 200;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.feature__title--highlighted {
+  font-weight: 600;
+  text-align: center;
+}
+
+.feature h2 {
+  font-size: var(--fs-1);
+}
+
+.feature__desc {
+  text-align: center;
+  margin-bottom: 4.75rem;
+  line-height: 1.563rem;
+}
+
+.feature__card {
+  padding: 28px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.55rem;
+  border-bottom-right-radius: 0.55rem;
+  box-shadow: 0px 15px 30px -11px hsla(213, 47%, 67%, 0.5);
+}
+.feature__card--color2 {
+  border-top: 0.222rem solid var(--clr-primary-2);
+}
+.feature__card--color1 {
+  border-top: 0.222rem solid var(--clr-primary-1);
+}
+.feature__card--color3 {
+  border-top: 0.222rem solid var(--clr-primary-3);
+}
+.feature__card--color4 {
+  border-top: 0.222rem solid var(--clr-primary-4);
+}
+
+.feature__card-title {
+  margin-bottom: 0.4rem;
+}
+
+.feature__card-desc {
+  font-size: var(--fs-3);
+  line-height: 1.438rem;
+  margin-bottom: 2.063rem;
 }/*# sourceMappingURL=style.css.map */

@@ -12,16 +12,24 @@ html {
 }
 
 body {
-    line-height: 1.5; 
+    line-height: 1.5;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-2);
+    color: var(--clr-primary-5);
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 h1, h2, h3 {
     line-height: 1;
+    font-weight: 600;
+    font-size: var(--fs-4);
 }
 
 p, li, figcaption {
     text-wrap: pretty;
     max-width: 65ch;
+    color: var(--clr-secondary-text);
 }
 
 img, picture, video, canvas, svg {
