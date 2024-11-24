@@ -1,1 +1,87 @@
-/*# sourceMappingURL=style.css.map */
+/* poppins-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/poppins-v21-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --ff-primary: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --fs-1: clamp(1.5rem, 1.2359154929577465rem + 1.1267605633802815vw, 2.25rem);
+  --fs-2: 0.938rem;
+  --fs-3: 0.813rem;
+}
+
+:root {
+  --clr-primary-1: hsl(0, 78%, 62%);
+  --clr-primary-2: hsl(180, 62%, 55%);
+  --clr-primary-3: hsl(34, 97%, 64%);
+  --clr-primary-4: hsl(212, 86%, 64%);
+  --clr-primary-5: hsl(232, 12%, 34%);
+  --clr-secondary-bg: hsl(0, 0%, 98%);
+  --clr-secondary-box-shadow: hsl(229, 6%, 66%);
+}
+
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+}
+
+p, li, figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
