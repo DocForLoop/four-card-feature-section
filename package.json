@@ -1,0 +1,15 @@
+{
+  "name": "four-card-feature-section",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "DocForLoop",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.81.0"
+  }
+}
