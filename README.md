@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io)
-- [Live Site](https://docforloop.github.io)
+- [Solution](https://www.frontendmentor.io/solutions/4-card-feature-section-with-flexbox-and-grid-jrHn8T6VNn)
+- [Live Site](https://docforloop.github.io/four-card-feature-section/)
 
 ## My process
 
