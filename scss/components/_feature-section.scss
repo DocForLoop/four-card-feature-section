@@ -1,10 +1,12 @@
 .feature {
-    background-color: var(--clr-secondary-bg);
     padding-inline: 32px;
     padding-top: 85px;
     padding-bottom: 78px;
 }
 
+.feature__header {
+    text-align: center;
+}
 .feature__header h2 {
     padding-inline: 7px;
 }
@@ -16,7 +18,6 @@
 
 .feature__title--highlighted {
     font-weight: 600;
-    text-align: center;
 }
 
 .feature h2 {
@@ -24,7 +25,6 @@
 }
 
 .feature__desc {
-    text-align: center;
     margin-bottom: 4.75rem;
     line-height: 1.563rem;
 }
@@ -34,20 +34,24 @@
     background-color: hsl( 0, 0%, 100%);
     border-top-left-radius: 0.2rem;
     border-top-right-radius: 0.2rem;
-    border-bottom-left-radius: 0.55rem;
-    border-bottom-right-radius: 0.55rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     box-shadow: 0px 15px 30px -11px hsl( 213, 47% ,67%, 0.5);
     &--color2 {
         border-top: 0.222rem solid var(--clr-primary-2);
+        grid-area: sup;
     }
     &--color1 {
         border-top: 0.222rem solid var(--clr-primary-1);
+        grid-area: team;
     }
     &--color3 {
         border-top: 0.222rem solid var(--clr-primary-3);
+        grid-area: kar;
     }
     &--color4 {
         border-top: 0.222rem solid var(--clr-primary-4);
+        grid-area: calc;
     }
 }
 
@@ -61,3 +65,42 @@
     margin-bottom: 2.063rem;
 }
 
+@media (width > 75em) {
+    .feature__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            '. team .'
+            'sup team calc'
+            'sup kar calc '
+            '. kar .';
+        gap: 1.875rem;
+        max-width: 69.375rem;
+    }
+    .feature {
+        display: flex;
+        flex-direction: column;
+        &__header {
+            align-self: center;
+        }
+    }
+    .feature__header h2 {
+        padding-inline: 0;
+    }
+    .feature__desc {
+        padding-inline: 32px;
+        max-width: 65ch;
+        margin-bottom: 4rem;
+    }
+    .feature__card {
+        padding: 32px;
+        &-icon {
+            width: 64px;
+            height: 64px;
+        }
+        &-desc {
+            margin-bottom: 2.5rem;
+        }
+    }
+}

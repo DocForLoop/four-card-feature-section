@@ -70,7 +70,7 @@ h1, h2, h3 {
 
 p, li, figcaption {
   text-wrap: pretty;
-  max-width: 65ch;
+  max-width: 45ch;
   color: var(--clr-secondary-text);
 }
 
@@ -95,6 +95,11 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+
 .feature__card {
   display: flex;
   flex-direction: column;
@@ -106,14 +111,30 @@ a, a:visited, a:active {
 
 .feature__grid {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "sup" "team" "kar" "calc";
   gap: 1.5rem;
+  align-self: center;
+  max-width: 20rem;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-secondary-bg);
 }
 
 .feature {
-  background-color: var(--clr-secondary-bg);
   padding-inline: 32px;
   padding-top: 85px;
   padding-bottom: 78px;
+}
+
+.feature__header {
+  text-align: center;
 }
 
 .feature__header h2 {
@@ -128,7 +149,6 @@ a, a:visited, a:active {
 
 .feature__title--highlighted {
   font-weight: 600;
-  text-align: center;
 }
 
 .feature h2 {
@@ -136,7 +156,6 @@ a, a:visited, a:active {
 }
 
 .feature__desc {
-  text-align: center;
   margin-bottom: 4.75rem;
   line-height: 1.563rem;
 }
@@ -146,21 +165,25 @@ a, a:visited, a:active {
   background-color: hsl(0, 0%, 100%);
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
-  border-bottom-left-radius: 0.55rem;
-  border-bottom-right-radius: 0.55rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   box-shadow: 0px 15px 30px -11px hsla(213, 47%, 67%, 0.5);
 }
 .feature__card--color2 {
   border-top: 0.222rem solid var(--clr-primary-2);
+  grid-area: sup;
 }
 .feature__card--color1 {
   border-top: 0.222rem solid var(--clr-primary-1);
+  grid-area: team;
 }
 .feature__card--color3 {
   border-top: 0.222rem solid var(--clr-primary-3);
+  grid-area: kar;
 }
 .feature__card--color4 {
   border-top: 0.222rem solid var(--clr-primary-4);
+  grid-area: calc;
 }
 
 .feature__card-title {
@@ -171,4 +194,40 @@ a, a:visited, a:active {
   font-size: var(--fs-3);
   line-height: 1.438rem;
   margin-bottom: 2.063rem;
+}
+
+@media (width > 75em) {
+  .feature__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: ". team ." "sup team calc" "sup kar calc " ". kar .";
+    gap: 1.875rem;
+    max-width: 69.375rem;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature__header {
+    align-self: center;
+  }
+  .feature__header h2 {
+    padding-inline: 0;
+  }
+  .feature__desc {
+    padding-inline: 32px;
+    max-width: 65ch;
+    margin-bottom: 4rem;
+  }
+  .feature__card {
+    padding: 32px;
+  }
+  .feature__card-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .feature__card-desc {
+    margin-bottom: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
