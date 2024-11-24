@@ -185,6 +185,9 @@ main {
   border-top: 0.222rem solid var(--clr-primary-4);
   grid-area: calc;
 }
+.feature__card-icon {
+  margin-top: auto;
+}
 
 .feature__card-title {
   margin-bottom: 0.4rem;
@@ -196,7 +199,7 @@ main {
   margin-bottom: 2.063rem;
 }
 
-@media (width > 75em) {
+@media (width > 48em) {
   .feature__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
