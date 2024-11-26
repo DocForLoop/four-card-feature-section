@@ -188,6 +188,8 @@ main {
 }
 .feature__card-icon {
   margin-top: auto;
+  height: clamp(3.5625rem, 3.4084507042rem + 0.6572769953vw, 4rem);
+  width: clamp(3.5625rem, 3.4084507042rem + 0.6572769953vw, 4rem);
 }
 
 .feature__card-title {
@@ -226,10 +228,6 @@ main {
   }
   .feature__card {
     padding: 32px;
-  }
-  .feature__card-icon {
-    width: 64px;
-    height: 64px;
   }
   .feature__card-desc {
     margin-bottom: 2.5rem;
