@@ -143,13 +143,14 @@ main {
 
 .feature__title {
   font-weight: 200;
-  margin-bottom: 1rem;
   line-height: 1.5;
 }
 
 .feature__title--highlighted {
   font-weight: 600;
   color: var(--clr-primary-5);
+  font-size: var(--fs-1);
+  margin-bottom: 1rem;
 }
 
 .feature h2 {
