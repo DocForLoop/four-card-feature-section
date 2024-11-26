@@ -61,8 +61,8 @@
 
     &-icon {
         margin-top: auto;
-        width: clamp(3.5625rem, 3.408450704225352rem + 0.6572769953051643vw, 4rem);
         height: clamp(3.5625rem, 3.408450704225352rem + 0.6572769953051643vw, 4rem);
+        width: clamp(3.5625rem, 3.408450704225352rem + 0.6572769953051643vw, 4rem);
     }
 }
 
@@ -107,7 +107,6 @@
     }
     .feature__card {
         padding: 32px;
-
         &-desc {
             margin-bottom: 2.5rem;
         }
