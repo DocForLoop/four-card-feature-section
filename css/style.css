@@ -209,7 +209,7 @@ main {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "sup team" "kar calc";
     gap: 1.875rem;
-    max-width: 47.438rem;
+    max-width: 44.2rem;
   }
   .feature {
     display: flex;
@@ -243,6 +243,8 @@ main {
     max-width: 69.375rem;
   }
   .feature {
+    padding-inline: 25px;
+    padding-block: 80px;
     display: flex;
     flex-direction: column;
   }
