@@ -149,6 +149,7 @@ main {
 
 .feature__title--highlighted {
   font-weight: 600;
+  color: var(--clr-primary-5);
 }
 
 .feature h2 {
